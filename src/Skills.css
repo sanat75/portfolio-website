@@ -1,0 +1,111 @@
+.skills {
+    background-color: #f8f9fa;
+  }
+  
+  .skills-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  
+  .skill-category {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  }
+  
+  .category-title {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: var(--dark-color);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .category-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color);
+  }
+  
+  .skills-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill-item {
+    width: 100%;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .skill-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .skill-percentage {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background: #eee;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .skill-progress {
+    height: 100%;
+    background: linear-gradient(to right, #0366d6, #2ea44f);
+    border-radius: 5px;
+    position: relative;
+    transition: width 1.5s ease;
+  }
+  
+  .skill-progress::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, 
+      rgba(255,255,255,0.15) 25%, 
+      transparent 25%, 
+      transparent 50%, 
+      rgba(255,255,255,0.15) 50%, 
+      rgba(255,255,255,0.15) 75%, 
+      transparent 75%, 
+      transparent);
+    background-size: 20px 20px;
+    animation: move 1s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 20px 0;
+    }
+  }
+  
+  @media screen and (max-width: 992px) {
+    .skills-content {
+      grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,132 @@
+.contact-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+  color: #2d3748;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background-color: #4a90e2;
+}
+
+/* Contact Info Styles */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.contact-card.clickable {
+  cursor: pointer;
+}
+
+.contact-card.clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #4a90e2;
+  background-color: rgba(74, 144, 226, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.contact-details h3 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  color: #2d3748;
+}
+
+.contact-details p {
+  margin: 0;
+  color: #4a5568;
+  word-break: break-word;
+}
+
+.contact-link {
+  color: #4a5568;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin: 0;
+  display: block;
+}
+
+.contact-link:hover {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+/* WhatsApp specific styling */
+.contact-card:has(.fa-whatsapp) .contact-icon {
+  background-color: rgba(37, 211, 102, 0.1);
+  color: #25d366;
+}
+
+.contact-card:has(.fa-whatsapp) .contact-link:hover {
+  color: #25d366;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .contact-info {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}

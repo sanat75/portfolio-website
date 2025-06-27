@@ -1,0 +1,367 @@
+/* Projects Section */
+.projects {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* Filter Buttons */
+.projects-filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border: none;
+  background: transparent;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.filter-btn:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.filter-btn.active {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  padding: 30px;
+  border: 1px solid #f0f0f0;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, var(--primary-color), #007bff);
+  border-radius: 15px 15px 0 0;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.project-info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+  line-height: 1.4;
+}
+
+.project-venue {
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+  background: rgba(3, 102, 214, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.project-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  line-height: 1.7;
+  flex-grow: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.tech-tag {
+  padding: 6px 12px;
+  background: rgba(3, 102, 214, 0.1);
+  color: var(--primary-color);
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.project-link-container {
+  margin-top: auto;
+}
+
+.project-go-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.project-go-link:hover {
+  background: var(--dark-color);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-go-link.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.project-go-link.disabled:hover {
+  background: #ccc;
+  transform: none;
+  box-shadow: none;
+}
+
+/* CSS Variables (add these to your main CSS file if not already present) */
+:root {
+  --primary-color: #0366d6;
+  --dark-color: #333;
+  --light-gray: #f8f9fa;
+  --text-color: #666;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .project-card {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 60px 0;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .projects-filter {
+    gap: 8px;
+    margin-bottom: 30px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
+  
+  .project-title {
+    font-size: 1.2rem;
+  }
+  
+  .project-description {
+    font-size: 0.9rem;
+  }
+  
+  .project-card {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .projects-filter {
+    gap: 5px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .project-title {
+    font-size: 1.1rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+  
+  .project-go-link {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Animation for project cards on scroll */
+.project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.1s; }
+.project-card:nth-child(2) { animation-delay: 0.2s; }
+.project-card:nth-child(3) { animation-delay: 0.3s; }
+.project-card:nth-child(4) { animation-delay: 0.4s; }
+.project-card:nth-child(5) { animation-delay: 0.5s; }
+.project-card:nth-child(6) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effects for better interactivity */
+.project-card:hover .project-title {
+  color: var(--primary-color);
+}
+
+.project-card:hover .project-venue {
+  background: var(--primary-color);
+  color: white;
+}
+
+/* Focus states for accessibility */
+.filter-btn:focus,
+.project-go-link:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Loading state (optional - for when projects are being filtered) */
+.projects-grid.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Empty state (optional - for when no projects match filter) */
+.projects-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.projects-empty h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
+
+.projects-empty p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* Print styles */
+@media print {
+  .projects-filter {
+    display: none;
+  }
+  
+  .project-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .project-go-link {
+    display: none;
+  }
+}

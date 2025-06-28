@@ -39,7 +39,7 @@ const Hero = () => {
           <div className="hero-avatar"></div>
         </div>
       </div>
-      <div className="hero-scroll">
+      {/* <div className="hero-scroll">
         <Link to="about" smooth={true} duration={500}>
           <div className="mouse">
             <div className="wheel"></div>
@@ -50,7 +50,7 @@ const Hero = () => {
             <span className="arrow-down"></span>
           </div>
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };

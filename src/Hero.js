@@ -17,14 +17,18 @@ const Hero = () => {
 </p>
 
           <div className="hero-cta">
-            <Link to="contact" smooth={true} duration={500} className="btn hero-btn">Get In Touch</Link>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn hero-btn-outline">Download CV</a>
+            {/* <Link to="contact" smooth={true} duration={500} className="btn hero-btn">Get In Touch</Link> */}
+            <a href="https://drive.google.com/file/d/1NE5Mzz7IvwqEKLsy-z0fwd-PMYTvo8Nb/view?usp=sharing
+            
+            
+            
+            " target="_blank" rel="noopener noreferrer" className="btn hero-btn-outline">Download CV</a>
           </div>
           <div className="hero-social">
-            <a href="https://linkedin.com/sanat-chaudhary" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/sanat-chaudhary-869a90256/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://github.com/sanat-chaudhary" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/sanat75" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
             <a href="mailto:sanat23122003@gmail.com">

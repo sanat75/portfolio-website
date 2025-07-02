@@ -10,7 +10,7 @@ const Experience = () => {
       id: 1,
       company: "PricewaterhouseCoopers (PwC)",
       position: "Summer Intern",
-      duration: "Jan 2025 - Present",
+      duration: "June 2025 - Present",
       location: "Gurugram, India",
       description: [
         "Built and enhanced comprehensive financial models for company valuations in mergers, acquisitions, and strategic investment contexts, contributing to multi-million dollar transaction decisions.",

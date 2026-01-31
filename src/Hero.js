@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import './Hero.css';
 import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Experience.css';
-import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);

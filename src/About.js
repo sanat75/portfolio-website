@@ -12,18 +12,18 @@ const About = () => {
         
         <div className="about-content">
           <div className="about-text">
-            <h3>AI, Finance & Tech Enthusiast | Researcher & Developer</h3>
+            <h3>Backend Engineer | ML Researcher | Full-Stack Developer</h3>
             <p>
-              I'm a final-year Computer Science student at Delhi Technological University, driven by the synergy between artificial intelligence, finance, and software development. My work spans research labs, tech startups, and global consulting firms—building solutions that are both intelligent and impactful.
+              I'm a final-year Computer Science student at Delhi Technological University with hands-on experience building scalable backend systems, machine learning models, and intelligent financial solutions. Currently a Backend Engineer at Cred, I architect event-driven pipelines and optimize critical payment infrastructure serving millions of users.
             </p>
             <p>
-              At Samsung R&D, I led deep learning research using physiological data, pushing predictive accuracy beyond published benchmarks. As a Valuations Intern at PwC, I developed automated financial models—DCF, comps, and scenario-based—for mergers and strategic investment cases across sectors.
+              At Cred, I've implemented production-grade Kafka-to-Databricks event pipelines for real-time analytics, engineered self-healing instrument validation systems that improved payment success rates, and optimized transaction history APIs achieving 88% performance gains. I coordinate seamlessly across SRE, Data Engineering, and Product teams to deliver scalable, fail-safe systems.
             </p>
             <p>
-              My time at Grain Analytics saw me optimize backend forecasting tools and enhance a React-based analytics dashboard for better performance and SEO. At HostBooks, I automated GST bill extraction using OCR and built 200+ dynamic charts for business intelligence reporting.
+              Beyond backend engineering, I've led deep learning research at Samsung R&D on EEG signal analysis (98% accuracy in stress classification), automated financial modeling at PwC using Monte Carlo simulations for cross-border M&A transactions, and built OCR-based automation pipelines at HostBooks processing 200+ bills daily.
             </p>
             <p>
-              With added experience in strategic consulting and leading student teams, I bring a unique blend of analytical rigor, engineering skill, and business insight to every challenge.
+              With expertise in system design, distributed computing, machine learning, and financial modeling, I combine technical rigor with business acumen to build solutions that scale and create measurable impact.
             </p>
             
             {/* <div className="about-info">
@@ -50,27 +50,27 @@ const About = () => {
         <div className="about-services">
           <div className="service-item">
             <div className="service-icon">
-              <FaBrain />
+              <FaCode />
             </div>
-            <h4>AI & Machine Learning</h4>
-            <p>Developing state-of-the-art machine learning models for EEG analysis, retail forecasting, and inventory optimization.</p>
+            <h4>Backend Systems</h4>
+            <p>Designing scalable event-driven architectures, real-time analytics pipelines, and optimized APIs using Kafka, Spring Boot, and distributed computing principles.</p>
           </div>
           
           <div className="service-item">
             <div className="service-icon">
-              <FaCode />
+              <FaBrain />
             </div>
-            <h4>Full Stack Development</h4>
-            <p>Building performant web applications with React.js, Angular, and FastAPI that deliver exceptional user experiences.</p>
+            <h4>AI & Machine Learning</h4>
+            <p>Building state-of-the-art ML models for signal processing, stress classification, and retail forecasting—achieving 98%+ accuracy on benchmark datasets.</p>
           </div>
           
           <div className="service-item">
             <div className="service-icon">
               <FaDatabase />
             </div>
-            <h4>Finance</h4>
+            <h4>Finance & Automation</h4>
             <p>
-              Building intelligent financial models and automating valuation workflows to turn complex data into clear, strategic insights. 
+              Developing intelligent financial models, Monte Carlo simulations for M&A valuations, and OCR-based automation pipelines for enterprise data processing.
             </p>
           </div>
           
@@ -78,8 +78,8 @@ const About = () => {
             <div className="service-icon">
               <FaLaptopCode />
             </div>
-            <h4>Research & Development</h4>
-            <p>Pushing the boundaries of technology through innovative research in signal processing and neural networks.</p>
+            <h4>Full-Stack Development</h4>
+            <p>Building performant web applications with React.js, Angular, and FastAPI; creating RAG-based chatbots and business intelligence dashboards.</p>
           </div>
         </div>
       </div>

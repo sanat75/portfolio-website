@@ -10,7 +10,7 @@ const Education = () => {
       institution: "Delhi Technological University",
       field: "Computer Science and Engineering",
       duration: "2022 - 2026 (Expected)",
-      gpa: "8.38/10",
+      gpa: "8.50/10",
       achievements: [
         "Ranked in the top 2 percentile among over 900,000 candidates in JEE Main 2022",
         "Completed 500+ DSA problems on LeetCode, maintaining a top 10% global rank",
